@@ -1,0 +1,20 @@
+package utilities;
+import command.*;
+
+public class Prototyp {
+
+	private String nameCommand = null;
+
+	public Prototyp() {
+	}
+
+	public String getNameCommand() {
+		return nameCommand;
+	}
+
+	private void setNameCommand(String nameCommand) {
+		this.nameCommand = nameCommand;
+	}
+
+	public Command createInstance()
+}

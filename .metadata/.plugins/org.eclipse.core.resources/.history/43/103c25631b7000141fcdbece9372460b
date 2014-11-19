@@ -144,7 +144,7 @@ public class VerketteteListe {
 		help = this;
 		// durch die Liste gehen
 		while (help.getNext() != null) {
-			// Namen überprüfen
+			// ID �berpr�fen
 			if (help.getInhalt().getName() == name) {
 				return help.getInhalt();
 			}

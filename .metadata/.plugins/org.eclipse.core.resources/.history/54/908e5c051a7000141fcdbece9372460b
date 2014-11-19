@@ -1,0 +1,25 @@
+package utilities;
+
+import command.*;
+
+public class Prototyp {
+
+	private String nameCommand = null;
+
+	public Prototyp(String nameCommand) {
+		this.setNameCommand(nameCommand);
+	}
+
+	public String getNameCommand() {
+		return nameCommand;
+	}
+
+	private void setNameCommand(String nameCommand) {
+		this.nameCommand = nameCommand;
+	}
+
+	public Command createInstance(String name) {
+		Command c = new Goto("Test", 34, 12);
+		return c;
+	}
+}

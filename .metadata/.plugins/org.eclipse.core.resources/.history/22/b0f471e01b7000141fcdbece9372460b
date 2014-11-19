@@ -140,8 +140,8 @@ public class VerketteteListe {
 	 * @param com
 	 * @return ein Element der Liste
 	 */
-	public Command getElement(String name) {
-		help = this;
+	public Command getElement(VerketteteListe list, String name) {
+		help = list;
 		// durch die Liste gehen
 		while (help.getNext() != null) {
 			// Namen überprüfen

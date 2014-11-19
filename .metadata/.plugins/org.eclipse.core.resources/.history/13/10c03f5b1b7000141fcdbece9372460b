@@ -140,17 +140,17 @@ public class VerketteteListe {
 	 * @param com
 	 * @return ein Element der Liste
 	 */
-	public Command getElement(String name) {
-		help = this;
+	public VerketteteListe getElement(VerketteteListe list, Command com) {
+		help = list;
 		// durch die Liste gehen
 		while (help.getNext() != null) {
-			// Namen überprüfen
-			if (help.getInhalt().getName() == name) {
-				return help.getInhalt();
+			// ID �berpr�fen
+			if (help.getInhalt().getId() == com.getId()) {
+				return help;
 			}
 			help = help.getNext();
 		}
-		return null;
+		return list;
 	}
 
 	/**
